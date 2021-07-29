@@ -1,0 +1,515 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+   /*
+  ========================================
+  Clear fix
+  ========================================
+*/
+
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+
+body{
+    color:black;
+}
+
+/* grid */
+
+.container{
+     max-width: 90%;
+     max-width:1100px;
+    margin: 5% auto;
+}
+
+.row{
+    width:100%
+}
+
+
+
+
+/********** Large devices only **********/
+@media (min-width: 1017px) {
+    .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+      float: left;
+    }
+.col-lg-1 {
+    width: 8.33%;
+  }
+  .col-lg-2 {
+    width: 16.66%;
+  }
+  .col-lg-3 {
+    width: 25%;
+  }
+  .col-lg-4 {
+    width: 33.33%;
+  }
+  .col-lg-5 {
+    width: 41.66%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-lg-7 {
+    width: 58.33%;
+  }
+  .col-lg-8 {
+    width: 66.66%;
+  }
+  .col-lg-9 {
+    width: 74.99%;
+  }
+  .col-lg-10 {
+    width: 83.33%;
+  }
+  .col-lg-11 {
+    width: 91.66%;
+  }
+  .col-lg-12 {
+    width: 100%;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 400px) and (max-width: 1016px) {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+  }
+  .col-md-1 {
+    width: 8.33%;
+  }
+  .col-md-2 {
+    width: 16.66%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-4 {
+    width: 33.33%;
+  }
+  .col-md-5 {
+    width: 41.66%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-7 {
+    width: 58.33%;
+  }
+  .col-md-8 {
+    width: 66.66%;
+  }
+  .col-md-9 {
+    width: 74.99%;
+  }
+  .col-md-10 {
+    width: 83.33%;
+  }
+  .col-md-11 {
+    width: 91.66%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+
+}
+
+
+.grid{
+    width:70%
+}
+
+.topnav{
+    position: fixed;
+    top:0;
+    padding:14px;
+    width:100%;
+    background-color:#fff;
+    z-index: 1;
+}
+
+.topnav h1{
+    font-size:15px;
+}
+
+.topnav .youtube-icon{
+    display: flex;
+    align-items: center;
+
+}
+
+.topnav .brand{
+    float:left;
+    display:inline-flex;
+    width:150px;
+    margin-right: 20px;
+    align-items: center
+}
+
+.topnav sup{
+    margin-left:5px;
+    margin-bottom:10px;
+    font-size: 10px;
+}
+
+.topnav .youtube-icon .bar-icon{
+    margin:0 20px;
+    font-size: 18px;
+    color:#808080;
+}
+
+.youtube-icon img{
+   width:25px;
+}
+
+
+
+.topnav .search-container{
+    /* margin: 10px 30px;   */
+   /* position: fixed ;
+   top :10px;
+   left:300px; */
+   float:left;
+   display:inline-block;
+   align-items: center;
+}
+
+.topnav input[type=text]{
+    padding: 6px;
+    font-size:12px;
+    float:left;
+    width:70%;
+    border:1px solid #d3d3d3;
+    border-right: none;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+} 
+
+@media (min-width:651px) and (max-width:800px){
+
+.topnav input[type=text]{
+    width: 50%
+}
+}
+
+@media (min-width:587px) and (max-width:650px){
+    .topnav input[type=text]{
+        width: 30%
+    }
+}
+
+@media (max-width:586px){
+
+    .topnav input[type=text]{
+        display: none;
+    }
+
+}
+
+.topnav .search-container button{
+    padding:8px 30px;
+    font-size:12px;
+    background:#ddd;
+    border:none;
+    margin-right: 20px;
+    float:left;
+    border:1px solid #d3d3d3;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+@media (max-width:586px){
+
+    .topnav .search-container button{
+        display: none;
+    }
+
+}
+
+.search-container .mic-icon{
+    float: left;
+    align-items:center;
+    margin-top:6px;
+}
+
+.search-container .mic-icon img{
+    width:18px;
+    filter: invert(49%) sepia(8%) saturate(15%) hue-rotate(14deg) brightness(100%) contrast(94%);
+} 
+
+.nav-icon{
+    /* position: relative;
+    top: 10px;
+    left:10px; */
+
+    float: left;
+    margin-left: 20px;
+    margin-right:25px;
+   
+   
+}
+
+.nav-icon ul{
+    display:inline-flex;
+    list-style: none;
+}
+
+.nav-icon ul li{
+    margin-left:25px;
+}
+
+.nav-icon img{
+    width:18px;
+    filter: invert(49%) sepia(8%) saturate(15%) hue-rotate(14deg) brightness(100%) contrast(94%);
+}
+
+.nav-icon #img2 img{
+    width:14px;
+}
+
+/* hero */
+.spacer{
+    padding-top:60px
+
+}
+.heros{
+    margin-top:30px;
+    height:1300px;
+    background-color:gray;
+}
+
+.video-sect .video-det iframe{
+    width:95%;
+    height:350px;
+}
+
+.video-highlights{
+
+}
+
+.view-like-share{
+    margin-top:20px;
+    padding-bottom:30px;
+    border-bottom:1px solid red;
+    margin-bottom: 20px;
+    margin-right: 30px;
+}
+
+.views-date{
+    float:left;
+}
+
+.like-share{
+    float:right;
+}
+
+.video-profile{
+    float:left;
+    padding:10px;
+    background-color: #9acd32;
+    color:#fff;
+    border-radius: 50%;
+    margin:0 20px;
+}
+
+.video-profile h3{
+    font-size:27px;
+}
+
+.video-name{
+    float: left;
+    /* margin-left:10px */
+}
+
+.btn{
+    float:right;
+    padding:5px 10px;
+    background-color: #ff000f;
+    font-size:20px;
+    margin-right: 30px;
+    border-radius:5px;
+    border:none;
+    color: #fff
+}
+
+.video-statement{
+    margin-bottom: 30px;
+    margin-left:98px;
+    margin-right:110px;
+}
+
+/********** Medium devices only **********/
+@media (min-width: 580px) and (max-width: 1016px) {
+    .video-sect .video-det{
+        max-width:674px;
+       margin: 5% auto;
+   }
+}
+
+.thumbnail-frame{
+    width:250px;
+    height:100px;
+    /* background-color: teal; */
+    /* left:0 */
+}
+
+.test-div{
+    /* display: inline-block; */
+    margin-bottom:8px
+}
+
+
+.thumbnail-area{
+    margin-top: 12px;
+   
+}
+
+.youtube-thumbnail{
+    width:160;
+    position: relative;
+    height:95px;
+    /* display:inline-block; */
+    
+}
+
+
+.youtube-thumbnail img{
+    width:100%;
+    height:95px;
+}
+
+.thumbnail-time {
+    position: absolute;
+    color: #fff;
+    background-color: #000;
+    bottom: 0;
+    right: 3px;
+    font-size:12px;
+    clear:both
+}
+
+.thumbnail-clock {
+    position: absolute;
+    top:3px;
+    right:3px;
+    padding: 5px;
+    background-color:transparent;
+    transition: 0.5s;
+}
+
+.thumbnail-playlist {
+    position: absolute;
+    top:33px;
+    right:3px;
+    padding: 5px;
+    background-color:transparent;
+    transition: 0.5s;
+}
+
+.thumbnail-play {
+    position: absolute;
+    top:36;
+    right:68;
+}
+
+.youtube-thumbnail:hover .thumbnail-clock ,.youtube-thumbnail:hover .thumbnail-playlist{
+    background-color:rgba(0, 0, 0, 0.7);
+}
+
+.youtube-thumbnail .thumbnail-clock img,.youtube-thumbnail .thumbnail-playlist img{
+    width:15px;
+    height:15px;
+    filter: invert(100%) sepia(27%) saturate(239%) hue-rotate(189deg) brightness(101%) contrast(104%);
+    opacity:0;
+    transition: 0.5s;
+}
+
+
+.thumbnail-play img{
+    width:24px;
+    height:24px;
+    filter: invert(100%) sepia(27%) saturate(239%) hue-rotate(189deg) brightness(101%) contrast(104%);
+    opacity:0;
+    
+}
+
+
+.youtube-thumbnail:hover .thumbnail-clock img,.youtube-thumbnail:hover .thumbnail-playlist img,.youtube-thumbnail:hover .thumbnail-play img{
+    opacity:1;
+    
+}
+
+.youtube-thumbnail:hover .thumbnail-play img{
+    transition: 1.3s;
+}
+
+
+.thumbnail-desc{
+    /* display:inline-block; */
+}
+
+/********** Medium devices only **********/
+@media (min-width: 580px) and (max-width: 1016px){
+    .test-div{
+        width:80%;
+        /* max-width:1000;
+        margin:5% auto; */
+    }
+
+    .thumbnail-desc{
+        position:absolute;
+        left:200px;
+        flex-wrap: wrap;
+        margin-right:20px;
+     }
+     
+     .youtube-thumbnail{
+         width:160;
+         position: relative;
+         left:20px;
+         
+     }
+}
+
+/* comment */
+
+.com-sort{
+    float: left;
+}
+.com-sort p{
+   font-size: 18px;
+   float: left;
+  
+}
+
+.com-sort p.first-p{
+    margin-right: 30px;
+}
+
+.com-sort p img{
+    width:14px;
+    height:14px;
+    margin-right: 10px;
+}
+
+
+.side-bar{
+    float: right;
+}
+
