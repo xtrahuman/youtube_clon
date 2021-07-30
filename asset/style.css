@@ -26,6 +26,8 @@
 
 body{
     color:black;
+    background-color: #F5F5F5;
+
 }
 
 /* grid */
@@ -37,7 +39,8 @@ body{
 }
 
 .row{
-    width:100%
+    width:100%;
+    background-color: #F5F5F5;
 }
 
 
@@ -291,7 +294,7 @@ body{
 .heros{
     margin-top:30px;
     height:1300px;
-    background-color:gray;
+    background-color:#F5F5F5;
 }
 
 .video-sect .video-det iframe{
@@ -309,6 +312,7 @@ body{
     border-bottom:1px solid red;
     margin-bottom: 20px;
     margin-right: 30px;
+    margin:20px 30px 20px 20px
 }
 
 .views-date{
@@ -360,6 +364,14 @@ body{
         max-width:674px;
        margin: 5% auto;
    }
+}
+
+
+
+/************ sidebar**************/
+
+.side-bar{
+    float: right;
 }
 
 .thumbnail-frame{
@@ -491,11 +503,16 @@ body{
 
 .com-sort{
     float: left;
+    margin-left:20px;
 }
 .com-sort p{
    font-size: 18px;
    float: left;
-  
+}
+
+
+.comments{
+ margin:20px;
 }
 
 .com-sort p.first-p{
@@ -506,10 +523,66 @@ body{
     width:14px;
     height:14px;
     margin-right: 10px;
+    
+}
+
+.com-profile{
+    width:40px;
+    border-radius: 50%;
+    float: left;
+    margin-right:20px;
+   
+}
+.com-profile img{
+    width:40px;
+    border-radius: 50%;
+    
+    
+}
+
+.com-comment{
+    margin-bottom:30px;
+}
+
+.com-comment input[type=text]{
+    padding: 6px;
+    font-size:12px;
+    width:80%;
+    border: 0;
+    border-bottom:1px solid red;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    display: inline;
+    background-color:#F5F5F5;;
+} 
+
+.clear-left{
+    clear:left;
 }
 
 
-.side-bar{
-    float: right;
+.com-like-reply{
+    display:inline-flex;
+    margin-top:10px;
 }
+
+.com-like-reply .com-like{
+    margin-right:10px
+}
+
+.com-like-reply .com-like .fa-thumbs-up{
+    margin-right:5px
+}
+
+.com-like-reply .com-dislike{
+    margin-right:10px;
+    transform: rotate(180);
+}
+
+.com-like-reply .com-dislike .fa-thumbs-up{
+    transform: rotate(180deg);
+}
+
+
+
 
