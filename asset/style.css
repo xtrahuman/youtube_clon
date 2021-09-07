@@ -393,7 +393,7 @@ body{
 }
 
 .youtube-thumbnail{
-    width:160;
+    width:160px;
     position: relative;
     height:95px;
     margin-right: 20px;
@@ -403,7 +403,7 @@ body{
 
 
 .youtube-thumbnail img{
-    width:100%;
+    width:160px;
     height:95px;
 }
 
