@@ -544,6 +544,11 @@ body{
     margin-bottom:30px;
 }
 
+.com-comment p{
+    font-size: 12px;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
 .com-comment input[type=text]{
     padding: 6px;
     font-size:12px;
