@@ -9,6 +9,7 @@ it contains some major front page features of youtube
 * css
 
 
-https://xtrahuman.github.io/youtube_clon/ - automatic!
+
+##link
 
 [cloned youtube](https://xtrahuman.github.io/youtube_clon/)
